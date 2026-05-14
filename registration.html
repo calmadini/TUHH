@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration | Mathematics of Machine Learning 2026</title>
+    <meta name="description" content="Registration for Mathematics of Machine Learning 2026 at TU Hamburg.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="forms.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" aria-label="Conference header">
+      <a class="brand" href="index.html#top" aria-label="Mathematics of Machine Learning 2026 home">
+        <img src="assets/tuhh.png" alt="TU Hamburg">
+        <span>Mathematics of Machine Learning</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#themes">Themes</a>
+        <a href="index.html#venue">Venue</a>
+        <a href="registration.html">Registration</a>
+        <a href="index.html#partners">Partners</a>
+      </nav>
+      <a class="header-cta" href="contact.html">Contact</a>
+    </header>
+
+    <main>
+      <section class="page-hero compact">
+        <p class="eyebrow">Registration</p>
+        <h1>Register your interest</h1>
+        <p>
+          Please complete the short form below. The organizing team will follow up with payment
+          and participation details.
+        </p>
+      </section>
+
+      <section class="form-layout">
+        <aside class="fee-panel" aria-labelledby="fees-title">
+          <p class="section-kicker">Fees</p>
+          <h2 id="fees-title">Registration fees</h2>
+          <div class="fee-list">
+            <div>
+              <span>Students and research assistants</span>
+              <strong>Free</strong>
+            </div>
+            <div>
+              <span>Presenter researchers</span>
+              <strong>200 EUR</strong>
+            </div>
+            <div>
+              <span>Listeners</span>
+              <strong>50 EUR</strong>
+            </div>
+          </div>
+          <p class="small-note">
+            Fees are concise planning figures and may be confirmed by the organizing team before payment.
+          </p>
+        </aside>
+
+        <form class="data-form" data-form-type="registration">
+          <div class="form-row">
+            <label for="fullName">Full name</label>
+            <input id="fullName" name="fullName" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-row two-columns">
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div>
+              <label for="affiliation">Affiliation</label>
+              <input id="affiliation" name="affiliation" type="text" required>
+            </div>
+          </div>
+          <div class="form-row two-columns">
+            <div>
+              <label for="category">Registration category</label>
+              <select id="category" name="category" required>
+                <option value="">Select category</option>
+                <option value="Student or research assistant - free">Student or research assistant - free</option>
+                <option value="Presenter researcher - 200 EUR">Presenter researcher - 200 EUR</option>
+                <option value="Listener - 50 EUR">Listener - 50 EUR</option>
+              </select>
+            </div>
+            <div>
+              <label for="presentation">Participation type</label>
+              <select id="presentation" name="presentation" required>
+                <option value="">Select type</option>
+                <option>Talk</option>
+                <option>Poster</option>
+                <option>Listener only</option>
+                <option>Undecided</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="title">Presentation title, if applicable</label>
+            <input id="title" name="title" type="text">
+          </div>
+          <div class="form-row two-columns">
+            <div>
+              <label for="academicFile">Abstract, paper, or presentation</label>
+              <input id="academicFile" name="academicFile" type="file" accept=".pdf,.doc,.docx,.ppt,.pptx">
+              <p class="field-help">Attach a conference abstract, paper, or presentation file.</p>
+            </div>
+            <div>
+              <label for="evidenceFile">Payment or eligibility evidence</label>
+              <input id="evidenceFile" name="evidenceFile" type="file" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx">
+              <p class="field-help">Payment proof, student ID, or assistantship evidence.</p>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Dietary needs, accessibility needs, or questions"></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="button primary" type="submit">Submit registration</button>
+            <a class="button secondary" href="contact.html">Send inquiries</a>
+          </div>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <img src="assets/tuhh.png" alt="TU Hamburg">
+        <p>Mathematics of Machine Learning 2026</p>
+      </div>
+      <a href="mailto:dsf-conference@tuhh.de">dsf-conference@tuhh.de</a>
+    </footer>
+  </body>
+</html>

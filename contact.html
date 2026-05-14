@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | Mathematics of Machine Learning 2026</title>
+    <meta name="description" content="Contact the Mathematics of Machine Learning 2026 conference team.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="forms.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" aria-label="Conference header">
+      <a class="brand" href="index.html#top" aria-label="Mathematics of Machine Learning 2026 home">
+        <img src="assets/tuhh.png" alt="TU Hamburg">
+        <span>Mathematics of Machine Learning</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#themes">Themes</a>
+        <a href="index.html#venue">Venue</a>
+        <a href="registration.html">Registration</a>
+        <a href="index.html#partners">Partners</a>
+      </nav>
+      <a class="header-cta" href="contact.html">Contact</a>
+    </header>
+
+    <main>
+      <section class="page-hero compact">
+        <p class="eyebrow">Contact</p>
+        <h1>Send a message</h1>
+        <p>
+          Choose the topic so your message reaches the right conference contact.
+        </p>
+      </section>
+
+      <section class="form-layout contact-layout">
+        <form class="data-form" data-form-type="contact">
+          <div class="form-row">
+            <label for="topic">Inquiry type</label>
+            <select id="topic" name="topic" required>
+              <option value="">Select inquiry type</option>
+              <option value="General inquiry" data-email="dsf-conference@tuhh.de">General inquiry</option>
+              <option value="Other issues" data-email="dsf-conference@tuhh.de">Other issues</option>
+              <option value="Registration inquiry" data-email="dsf-it@tuhh.de">Registration inquiry</option>
+            </select>
+          </div>
+          <div class="form-row two-columns">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="button primary" type="submit">Send inquiry</button>
+            <a class="button secondary" href="registration.html">Register now</a>
+          </div>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="contact-panel" aria-labelledby="direct-contact-title">
+          <p class="section-kicker">Direct contact</p>
+          <h2 id="direct-contact-title">Email, telephone, address</h2>
+          <div class="contact-list">
+            <div>
+              <span>General and other issues</span>
+              <a href="mailto:dsf-conference@tuhh.de">dsf-conference@tuhh.de</a>
+            </div>
+            <div>
+              <span>Registration inquiry</span>
+              <a href="mailto:dsf-it@tuhh.de">dsf-it@tuhh.de</a>
+            </div>
+            <div>
+              <span>Telephone</span>
+              <a href="tel:+4940306014932">+49 40 306 01 4932</a>
+            </div>
+            <div>
+              <span>Address</span>
+              <p>
+                Institute for Data Science Foundations<br>
+                Hamburg University of Technology<br>
+                Blohmstrasse 15<br>
+                21079 Hamburg, Germany
+              </p>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <img src="assets/tuhh.png" alt="TU Hamburg">
+        <p>Mathematics of Machine Learning 2026</p>
+      </div>
+      <a href="mailto:dsf-conference@tuhh.de">dsf-conference@tuhh.de</a>
+    </footer>
+  </body>
+</html>
